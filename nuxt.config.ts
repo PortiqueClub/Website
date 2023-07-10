@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
+    'nuxt-mapbox',
     [
       '@nuxtjs/i18n',
       {
@@ -34,6 +35,10 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
+  },
+
+  mapbox: {
+    accessToken: import.meta.env.VITE_MAPBOX_ACCESS_TOKEN,
   },
 
   ssr: false,

@@ -22,11 +22,7 @@
           center: [-1.4320995, 46.3436326],
           zoom: 14,
         }"
-      >
-        <MapboxDefaultMarker
-          :lnglat="[-1.4320995, 46.3436326]"
-        />
-      </MapboxMap>
+      />
     </div>
   </div>
 </section>

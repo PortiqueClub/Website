@@ -1,7 +1,7 @@
 <template>
 <section
   id="map"
-  class="py-48 space-y-16 bg-blue-dark mb-400"
+  class="py-48 space-y-16 bg-blue-dark md:mb-400"
 >
   <h2 class="mb-20 text-3xl font-bold text-center font-heading text-yellow-light">
     {{ $t('club.accessibility.title') }}

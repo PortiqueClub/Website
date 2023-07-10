@@ -46,8 +46,6 @@ export default defineNuxtConfig({
     accessToken: import.meta.env.VITE_MAPBOX_ACCESS_TOKEN,
   },
 
-  ssr: false,
-
   app: {
     pageTransition: {
       name: 'page',

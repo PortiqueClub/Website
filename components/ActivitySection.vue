@@ -65,12 +65,12 @@
         >
         <img
           class="z-10 object-cover rounded-full w-128 h-128 md:w-256 md:h-256"
-          src="/static/logo-bleu-orange.svg"
+          src="/static/logo-bleu-orange.webp"
           alt="Logo portique club"
         >
         <img
           class="z-20 rotate-45 w-106 h-106"
-          src="/static/etoilebleu.svg"
+          src="/static/etoilebleu.webp"
           alt="blue star"
         >
       </div>
@@ -94,6 +94,7 @@
     </h2>
   </div>
   <img
+    v-if="!$isMobile"
     class="absolute z-0 w-full h-auto -bottom-64"
     src="/static/wave-footer-gold.svg"
     alt="waves-background"

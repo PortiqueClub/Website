@@ -52,18 +52,17 @@
               </p>
             </div>
             <div class="hidden grid-cols-2 gap-32 md:grid">
-              <nuxt-img
+              <img
                 class="w-full"
                 src="/static/trampoline.svg"
-                sizes="sm:100vw md:50vw lg:400px"
                 alt="trampoline"
-              />
-
-              <Image
-                wrapper-classes="w-full"
+              >
+              <img
+                class="w-full"
                 src="/static/balancoire.svg"
                 alt="balançoires"
-              />
+              >
+              <!-- TODO add translation for assets -->
             </div>
           </div>
         </div>
@@ -144,11 +143,11 @@
             </p>
           </div>
           <div class="hidden md:block">
-            <Image
-              wrapper-classes="w-full"
+            <img
+              class="w-full"
               src="/static/nageur.svg"
               alt="nageur"
-            />
+            >
           </div>
         </div>
       </div>
@@ -165,17 +164,13 @@
         {{ $t('club.on_closing') }}
       </p>
       <div class="hidden md:block">
-        <Image
-          wrapper-classes="w-full h-256"
+        <img
+          class="w-full h-256"
           src="/static/dance.svg"
           alt="dance"
-        />
+        >
       </div>
     </div>
   </div>
 </section>
 </template>
-
-<script setup lang="ts">
-import Image from './Image.vue'
-</script>

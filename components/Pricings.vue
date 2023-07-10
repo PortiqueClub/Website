@@ -87,38 +87,34 @@
           <h6 class="px-6 py-4 text-center rounded-full text-yellow-light bg-blue-dark">
             {{ $t('payment.cash') }}
           </h6>
-          <Image
-            wrapper-classes="w-full h-106"
+          <img
+            class="w-full h-106"
             src="/static/euro.svg"
             alt="Espèce"
-          />
+          >
         </div>
         <div class="flex flex-col space-y-32">
           <h6 class="px-6 py-4 text-center rounded-full text-yellow-light bg-blue-dark">
             {{ $t('payment.ch') }}
           </h6>
-          <Image
-            wrapper-classes="w-full h-80"
+          <img
+            class="w-full h-80"
             src="/static/cheque.webp"
             alt="Espèce"
-          />
+          >
         </div>
         <div class="flex flex-col space-y-32">
           <h6 class="px-6 py-4 text-center rounded-full text-yellow-light bg-blue-dark">
             {{ $t('payment.cv') }}
           </h6>
-          <Image
-            wrapper-classes="w-full h-106"
+          <img
+            class="w-full h-106"
             src="/static/cheque-vacance.svg"
             alt="Chèque-vacances"
-          />
+          >
         </div>
       </div>
     </div>
   </div>
 </section>
 </template>
-
-<script setup lang="ts">
-import Image from './Image.vue'
-</script>

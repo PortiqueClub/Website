@@ -33,5 +33,7 @@
 <script setup lang="ts">
 import { MENU_ITEMS } from '@/helpers/constants'
 
+const { $isMobile } = useNuxtApp()
+
 // import SwitchLang from './SwitchLang.vue'
 </script>

@@ -4,7 +4,6 @@
   <div class="flex flex-col min-h-screen bg-yellow-light">
     <TheHeader
       v-if="!$isMobile"
-      class="hidden md:block"
     />
 
     <main class="bg-blue-dark">
@@ -23,3 +22,7 @@
   </div>
 </div>
 </template>
+
+<script setup lang="ts">
+const { $isMobile } = useNuxtApp()
+</script>

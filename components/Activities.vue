@@ -186,3 +186,7 @@
   </div>
 </section>
 </template>
+
+<script setup lang="ts">
+const { $isMobile } = useNuxtApp()
+</script>

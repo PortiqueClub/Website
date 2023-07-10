@@ -13,7 +13,17 @@
         {{ $t('club.accessibility.content') }}
       </p>
     </div>
-    <div class="relative col-span-2">
+    <div v-if="$isMobile">
+      <img
+        src="/static/map.webp"
+        alt="carte des lieux"
+      >
+    </div>
+
+    <div
+      v-else
+      class="relative col-span-2"
+    >
       <ClientOnly>
         <MapboxMap
           map-id="ID"
@@ -29,3 +39,7 @@
   </div>
 </section>
 </template>
+
+<script setup lang="ts">
+const { $isMobile } = useNuxtApp()
+</script>

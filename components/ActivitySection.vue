@@ -4,7 +4,7 @@
     <div class="z-10 flex items-start justify-end w-full h-full">
       <img
         class="z-10 object-cover rounded-full w-176 h-176"
-        src="/static/galerie1.jpg"
+        src="/static/galerie1.webp"
         alt="portique exemple 1"
       >
     </div>
@@ -12,7 +12,7 @@
     <div class="z-10 flex items-end justify-center w-full h-full">
       <img
         class="z-10 object-cover rounded-full w-160 h-160"
-        src="/static/galerie2.jpg"
+        src="/static/galerie2.webp"
         alt="portique exemple 2"
       >
     </div>
@@ -20,7 +20,7 @@
     <div class="z-10 flex items-start justify-center w-full h-full">
       <img
         class="z-10 object-cover rounded-full w-148 h-148"
-        src="/static/galerie3.jpg"
+        src="/static/galerie3.webp"
         alt="portique exemple 3"
       >
     </div>
@@ -28,7 +28,7 @@
     <div class="z-10 flex items-center justify-start w-full h-full">
       <img
         class="z-10 object-cover rounded-full w-176 h-176"
-        src="/static/galerie4.jpg"
+        src="/static/galerie4.webp"
         alt="portique exemple 4"
       >
     </div>
@@ -36,7 +36,7 @@
     <div class="z-10 flex items-center justify-start w-full h-full">
       <img
         class="z-10 object-cover rounded-full w-224 h-224"
-        src="/static/galerie5.jpg"
+        src="/static/galerie5.webp"
         alt="portique exemple 5"
       >
     </div>
@@ -45,7 +45,7 @@
     <div class="z-10 items-end justify-end hidden w-full h-full md:flex">
       <img
         class="z-10 object-cover rounded-full w-192 h-192"
-        src="/static/galerie6.jpg"
+        src="/static/galerie6.webp"
         alt="portique exemple 6"
       >
     </div>
@@ -73,7 +73,7 @@
     <div class="z-10 items-end justify-start hidden w-full h-full md:flex">
       <img
         class="z-10 object-cover rounded-full w-224 h-224"
-        src="/static/galerie7.jpg"
+        src="/static/galerie7.webp"
         alt="portique exemple 7"
       >
     </div>

@@ -10,7 +10,7 @@ export default defineI18nConfig(() => ({
       },
       footer: {
         localisation: 'Beach (close to town) 85360 La Tranche-sur-Mer',
-        copyright: '© Le Portique Club - Tous droits réservés',
+        copyright: '© Le Portique Club - All right reserved',
       },
       menu: {
         activity: 'Activités & Cours de Natation',

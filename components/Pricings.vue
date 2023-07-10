@@ -99,7 +99,7 @@
           </h6>
           <img
             class="w-full h-80"
-            src="/static/cheque.png"
+            src="/static/cheque.webp"
             alt="Espèce"
           >
         </div>

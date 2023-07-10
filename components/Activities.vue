@@ -25,7 +25,10 @@
               </p>
             </div>
           </div>
-          <div class="hidden md:block" />
+          <div
+            v-if="!$isMobile"
+            class="hidden md:block"
+          />
           <div class="flex flex-col justify-center space-y-8 text-center">
             <h4 class="text-xl font-bold text-yellow-light">
               {{ $t('booking.without') }}
@@ -51,7 +54,10 @@
                 {{ $t('club.morning') }}
               </p>
             </div>
-            <div class="hidden grid-cols-2 gap-32 md:grid">
+            <div
+              v-if="!$isMobile"
+              class="hidden grid-cols-2 gap-32 md:grid"
+            >
               <img
                 class="w-full"
                 src="/static/trampoline.svg"
@@ -142,7 +148,10 @@
               {{ $t('pool.content.list.infos_message') }}
             </p>
           </div>
-          <div class="hidden md:block">
+          <div
+            v-if="!$isMobile"
+            class="hidden md:block"
+          >
             <img
               class="w-full"
               src="/static/nageur.svg"
@@ -163,7 +172,10 @@
       <p class="px-32 text-blue-dark">
         {{ $t('club.on_closing') }}
       </p>
-      <div class="hidden md:block">
+      <div
+        v-if="!$isMobile"
+        class="hidden md:block"
+      >
         <img
           class="w-full h-256"
           src="/static/dance.svg"

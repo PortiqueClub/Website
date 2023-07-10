@@ -8,7 +8,10 @@
   </h2>
 
   <div class="grid grid-cols-1 md:gap-32 md:container md:grid-cols-3">
-    <div class="hidden md:block">
+    <div
+      v-if="!$isMobile"
+      class="hidden md:block"
+    >
       <img
         src="/static/historique-photo.webp"
         :alt="$t('club.history_title')"

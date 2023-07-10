@@ -1,6 +1,9 @@
 <template>
 <section class="relative flex flex-col items-center justify-center w-full py-12 bg-yellow-light">
-  <div class="hidden md:grid-cols-5 md:gap-12 md:grid">
+  <div
+    v-if="!$isMobile"
+    class="hidden md:grid-cols-5 md:gap-12 md:grid"
+  >
     <div class="z-10 flex items-start justify-end w-full h-full">
       <img
         class="z-10 object-cover rounded-full w-176 h-176"
@@ -42,7 +45,10 @@
     </div>
   </div>
   <div class="gap-12 md:grid md:grid-cols-3">
-    <div class="z-10 items-end justify-end hidden w-full h-full md:flex">
+    <div
+      v-if="!$isMobile"
+      class="z-10 items-end justify-end hidden w-full h-full md:flex"
+    >
       <img
         class="z-10 object-cover rounded-full w-192 h-192"
         src="/static/galerie6.webp"
@@ -70,7 +76,10 @@
       </div>
     </div>
 
-    <div class="z-10 items-end justify-start hidden w-full h-full md:flex">
+    <div
+      v-if="!$isMobile"
+      class="z-10 items-end justify-start hidden w-full h-full md:flex"
+    >
       <img
         class="z-10 object-cover rounded-full w-224 h-224"
         src="/static/galerie7.webp"

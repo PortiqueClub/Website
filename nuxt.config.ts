@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   extends: [
     'nuxt-seo-kit',
   ],
+
   runtimeConfig: {
     public: {
       siteUrl: 'https://leportiqueclub.fr/',
@@ -12,10 +14,12 @@ export default defineNuxtConfig({
       language: 'fr-FR',
     },
   },
+
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-mapbox',
     'nuxt-purgecss',
+    '@vueuse/nuxt',
     [
       '@nuxtjs/i18n',
       {
@@ -63,4 +67,6 @@ export default defineNuxtConfig({
       name: 'layout',
     },
   },
+
+  plugins: ['~/plugins/breakPoints.ts'],
 })

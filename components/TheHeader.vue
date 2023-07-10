@@ -6,7 +6,10 @@
       src="/static/logo-bleu.svg"
       alt="Portique club Logo"
     >
-    <nav class="items-center hidden space-x-24 md:flex">
+    <nav
+      v-if="!$isMobile"
+      class="items-center hidden space-x-24 md:flex"
+    >
       <a
         v-for="(item, index) in MENU_ITEMS"
         :key="index"

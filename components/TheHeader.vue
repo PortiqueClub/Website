@@ -1,11 +1,11 @@
 <template>
 <header class="z-10 px-40 py-8 border-b shadow-md md:mb-24 h-80 bg-yellow-light border-blue-dark">
   <div class="flex items-center justify-around md:container">
-    <img
-      class="object-cover w-56"
+    <Image
+      wrapper-classes="object-cover w-56"
       src="/static/logo-bleu.svg"
       alt="Portique club Logo"
-    >
+    />
     <nav class="items-center hidden space-x-24 md:flex">
       <a
         v-for="(item, index) in MENU_ITEMS"
@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import Image from './Image.vue'
 import { MENU_ITEMS } from '@/helpers/constants'
 
 // import SwitchLang from './SwitchLang.vue'

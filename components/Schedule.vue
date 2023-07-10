@@ -13,12 +13,16 @@
       href="/static/Jeux-concours-2021-juillet-et-août-1.pdf"
       download
     >
-      <img
-        class="w-256 h-256 text-blue-dark"
+      <Image
+        wrapper-classes="w-256 h-256 text-blue-dark"
         src="/static/calendar.svg"
         alt="calendar-icon"
-      >
+      />
     </a>
   </div>
 </section>
 </template>
+
+<script setup lang="ts">
+import Image from './Image.vue'
+</script>

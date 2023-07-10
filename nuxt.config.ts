@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-mapbox',
     'nuxt-purgecss',
+    '@nuxt/image',
     [
       '@nuxtjs/i18n',
       {

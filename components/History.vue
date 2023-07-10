@@ -9,10 +9,10 @@
 
   <div class="grid grid-cols-1 md:gap-32 md:container md:grid-cols-3">
     <div class="hidden md:block">
-      <img
+      <Image
         src="/static/historique-photo.webp"
         :alt="$t('club.history_title')"
-      >
+      />
     </div>
     <div class="col-span-2 px-20 py-24">
       <p class="text-yellow-light">
@@ -22,3 +22,7 @@
   </div>
 </section>
 </template>
+
+<script setup lang="ts">
+import Image from './Image.vue'
+</script>

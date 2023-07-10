@@ -2,7 +2,10 @@
 <div>
   <SeoKit />
   <div class="flex flex-col min-h-screen bg-yellow-light">
-    <TheHeader class="hidden md:block" />
+    <TheHeader
+      v-if="!$isMobile"
+      class="hidden md:block"
+    />
 
     <main class="bg-blue-dark">
       <div class="flex flex-col items-center ">

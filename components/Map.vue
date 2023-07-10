@@ -13,16 +13,18 @@
         {{ $t('club.accessibility.content') }}
       </p>
     </div>
-    <div class="col-span-2 relative">
-      <MapboxMap
-        map-id="ID"
-        style="height: 450px; width: 100%;"
-        :options="{
-          style: 'mapbox://styles/mapbox/streets-v12',
-          center: [-1.4320995, 46.3436326],
-          zoom: 14,
-        }"
-      />
+    <div class="relative col-span-2">
+      <ClientOnly>
+        <MapboxMap
+          map-id="ID"
+          style="height: 450px; width: 100%;"
+          :options="{
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [-1.4320995, 46.3436326],
+            zoom: 14,
+          }"
+        />
+      </ClientOnly>
     </div>
   </div>
 </section>

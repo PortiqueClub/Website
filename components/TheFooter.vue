@@ -4,11 +4,13 @@
   class="relative px-32 py-48 text-center duration-500 ease-in-out transform mt-18 bg-yellow-light text-blue-dark"
 >
   <img
+    v-if="!$isMobile"
     class="absolute left-0 z-0 hidden object-cover md:block w-450 h-450 -top-288"
     src="/static/castle.svg"
     alt="castle"
   >
   <img
+    v-if="!$isMobile"
     class="absolute left-0 z-0 hidden w-full md:block -top-56"
     src="/static/wave-footergold.svg"
     alt="waves footer"

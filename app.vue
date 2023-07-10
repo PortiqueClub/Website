@@ -12,7 +12,7 @@
         <Needs />
         <Pricings />
         <History />
-      <!-- <Map /> -->
+        <Map />
       </div>
     </main>
 

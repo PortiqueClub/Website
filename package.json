@@ -18,7 +18,9 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.16.19",
     "eslint": "^8.36.0",
+    "mapbox-gl": "^2.15.0",
     "nuxt": "^3.6.2",
+    "nuxt-mapbox": "^1.3.9",
     "nuxt-seo-kit": "^1.3.9",
     "typescript": "^5.1.6"
   }

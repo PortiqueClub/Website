@@ -14,7 +14,7 @@
       </p>
     </div>
     <div class="col-span-2">
-      <mapbox-map
+      <MapboxMap
         :access-token="MAPBOX_ACCESS_TOKEN"
         height="450px"
         width="100%"
@@ -22,10 +22,10 @@
         :center="[-1.4320995, 46.3436326]"
         :zoom="14"
       >
-        <mapbox-marker
+        <MapboxMarker
           :lng-lat="[-1.4320995, 46.3436326]"
         />
-      </mapbox-map>
+      </MapboxMap>
     </div>
   </div>
 </section>

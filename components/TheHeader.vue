@@ -29,5 +29,6 @@
 
 <script setup lang="ts">
 import { MENU_ITEMS } from '@/helpers/constants'
+
 // import SwitchLang from './SwitchLang.vue'
 </script>

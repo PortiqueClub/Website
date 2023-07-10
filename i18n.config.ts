@@ -4,6 +4,7 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       welcome: 'Welcome',
+      language: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 English',
       meta: {
         title: 'Le Portique Club',
       },
@@ -117,6 +118,7 @@ export default defineI18nConfig(() => ({
     },
     fr: {
       welcome: 'Bienvenue',
+      language: '🇫🇷 Français',
       meta: {
         title: 'Le Portique Club',
         description: 'Le Portique Club , depuis 1932, anime des activités et propose des cours de natation dans une piscine chauffée sur la plage pour les enfants pendant la période estivale. Il accueille vos enfants de 3 à 13 ans, du Dimanche au Vendredi (fermeture le Samedi) de 10h à 13h et de 15h30 à 18h30, de début Juillet à fin Août. L’inscription sur la plage est simple et rapide : à la journée, à la demi-journée ou à la semaine. Nous acceptons les chèques vacances. Le club se situe sur la Plage centrale de la Tranche-sur-Mer, à proximité du centre-ville.',

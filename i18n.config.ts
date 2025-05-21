@@ -38,10 +38,10 @@ export default defineI18nConfig(() => ({
       },
       club: {
         history_title: 'L\'histoire du club',
-        history_content: 'Lorsqu’en 1932 J. J. Breittmayer installe le “portique” sur la plage de La Tranche, les gens du pays sont ébahis… Sur la poutre centrale, en jaune et bleu, une devise pour ce maître d’éducation physique, « Être fort pour être utile ». En 1966, un de ses moniteurs, Camille lui succède et c’est l’heure de la modernité avec la première piscine et le premier trampoline, le “portique” devient un Club Mickey, avec ses caravanes publicitaires inter-plages. En 1977, avec Patrice et Danielle, c’est le club “famille” place au baby-club, aux jeux et concours, aux Olympiades, aux tournois de volley-ball, à la voile et sa flotille d’optimists et surtout, place à l’école de natation ! En 2009 Ludovic, l’actuel responsable du club, innove en développant la  natation à travers le jardin aquatique.',
+        history_content: 'Lorsqu\'en 1932 J. J. Breittmayer installe le "portique" sur la plage de La Tranche, les gens du pays sont ébahis… Sur la poutre centrale, en jaune et bleu, une devise pour ce maître d\'éducation physique, « Être fort pour être utile ». En 1966, un de ses moniteurs, Camille lui succède et c\'est l\'heure de la modernité avec la première piscine et le premier trampoline, le "portique" devient un Club Mickey, avec ses caravanes publicitaires inter-plages. En 1977, avec Patrice et Danielle, c\'est le club "famille" place au baby-club, aux jeux et concours, aux Olympiades, aux tournois de volley-ball, à la voile et sa flotille d\'optimists et surtout, place à l\'école de natation ! En 2009 Ludovic, l\'actuel responsable du club, innove en développant la  natation à travers le jardin aquatique.',
         lunchBreak: 'Pause déjeuner et surveilliance des enfants qui restent l\'après-midi ',
         morning: 'Encadrés par les animateurs, les petits et grands évoluent à leur guise au sein du club et profitent des installations (balançoires, trampoline, jeux). En fonction de la dynamique du groupe et des horaires des marées, les animateurs proposent des jeux, concours, parcours, observation des fonds marins… Une baignade en fin de matinée est prévue si le temps nous le permet.',
-        lunch: 'Pause déjeuner : Les enfants retrouvent leurs parents. Possibilité d’accueillir les enfants sous conditions (N’hésitez pas à nous solliciter)',
+        lunch: 'Pause déjeuner : Les enfants retrouvent leurs parents. Possibilité d\'accueillir les enfants sous conditions (N\'hésitez pas à nous solliciter)',
         on_closing: 'Pour finaliser cet après-midi joyeuse, tous les enfants et les animateurs se retrouvent autour d\'une chorégraphie ! On compte sur les adultes pour se joindre à eux ! Une remise de cadeaux pour clôturer cette belle journée',
         on_closing_title: 'Le final ! ',
         mini: {
@@ -56,7 +56,7 @@ export default defineI18nConfig(() => ({
         },
         accessibility: {
           title: 'Accessibilité / S\'y rendre',
-          content: 'Accessible à pied, en vélo (piste cyclable), en bus (Fun Bus, arrêt Rond-Point L’Auniscéane Piscine ou Centre ville – Place de la Liberté), en voiture (parking du Maupas)',
+          content: 'Accessible à pied, en vélo (piste cyclable), en bus (Fun Bus, arrêt Rond-Point L\'Auniscéane Piscine ou Centre ville – Place de la Liberté), en voiture (parking du Maupas)',
           address: 'Plage centrale (proche centre ville) 85360 La Tranche-sur-Mer',
         },
       },
@@ -66,7 +66,7 @@ export default defineI18nConfig(() => ({
         afternoon: '16€',
         day: '20€',
         lessons: '16€',
-        description: 'Présentez-vous directement sur la plage pour faire l\'inscription (Nom, prénom, téléphon et adresse). L’inscription est simple et rapide à la demi-journée, à la journée ou à la semaine.',
+        description: 'Présentez-vous directement sur la plage pour faire l\'inscription (Nom, prénom, téléphon et adresse). L\'inscription est simple et rapide à la demi-journée, à la journée ou à la semaine.',
       },
       schedules_of_season: {
         title: 'Les jeux concours de la saison',
@@ -115,13 +115,20 @@ export default defineI18nConfig(() => ({
         without_reservation: 'sans réservation',
         with_reservation: 'avec réservation',
       },
+      summer_closure: {
+        title: 'Summer Closure Notice',
+        message: 'We would like to inform you that the club will be closed during the summer period this year.',
+        reopening: 'We will reopen our doors next season.',
+        contact: 'For any questions, please do not hesitate to contact us.',
+        close: 'Close'
+      },
     },
     fr: {
       welcome: 'Bienvenue',
       language: '🇫🇷 Français',
       meta: {
         title: 'Le Portique Club',
-        description: 'Le Portique Club , depuis 1932, anime des activités et propose des cours de natation dans une piscine chauffée sur la plage pour les enfants pendant la période estivale. Il accueille vos enfants de 3 à 13 ans, du Dimanche au Vendredi (fermeture le Samedi) de 10h à 13h et de 15h30 à 18h30, de début Juillet à fin Août. L’inscription sur la plage est simple et rapide : à la journée, à la demi-journée ou à la semaine. Nous acceptons les chèques vacances. Le club se situe sur la Plage centrale de la Tranche-sur-Mer, à proximité du centre-ville.',
+        description: 'Le Portique Club , depuis 1932, anime des activités et propose des cours de natation dans une piscine chauffée sur la plage pour les enfants pendant la période estivale. Il accueille vos enfants de 3 à 13 ans, du Dimanche au Vendredi (fermeture le Samedi) de 10h à 13h et de 15h30 à 18h30, de début Juillet à fin Août. L\'inscription sur la plage est simple et rapide : à la journée, à la demi-journée ou à la semaine. Nous acceptons les chèques vacances. Le club se situe sur la Plage centrale de la Tranche-sur-Mer, à proximité du centre-ville.',
       },
       footer: {
         localisation: 'Plage centrale (proche centre ville) 85360 La Tranche-sur-Mer',
@@ -153,10 +160,10 @@ export default defineI18nConfig(() => ({
       },
       club: {
         history_title: 'L\'histoire du club',
-        history_content: 'Lorsqu’en 1932 J. J. Breittmayer installe le “portique” sur la plage de La Tranche, les gens du pays sont ébahis… Sur la poutre centrale, en jaune et bleu, une devise pour ce maître d’éducation physique, « Être fort pour être utile ». En 1966, un de ses moniteurs, Camille lui succède et c’est l’heure de la modernité avec la première piscine et le premier trampoline, le “portique” devient un Club Mickey, avec ses caravanes publicitaires inter-plages. En 1977, avec Patrice et Danielle, c’est le club “famille” place au baby-club, aux jeux et concours, aux Olympiades, aux tournois de volley-ball, à la voile et sa flotille d’optimists et surtout, place à l’école de natation ! En 2009 Ludovic, l’actuel responsable du club, innove en développant la  natation à travers le jardin aquatique.',
+        history_content: 'Lorsqu\'en 1932 J. J. Breittmayer installe le "portique" sur la plage de La Tranche, les gens du pays sont ébahis… Sur la poutre centrale, en jaune et bleu, une devise pour ce maître d\'éducation physique, « Être fort pour être utile ». En 1966, un de ses moniteurs, Camille lui succède et c\'est l\'heure de la modernité avec la première piscine et le premier trampoline, le "portique" devient un Club Mickey, avec ses caravanes publicitaires inter-plages. En 1977, avec Patrice et Danielle, c\'est le club "famille" place au baby-club, aux jeux et concours, aux Olympiades, aux tournois de volley-ball, à la voile et sa flotille d\'optimists et surtout, place à l\'école de natation ! En 2009 Ludovic, l\'actuel responsable du club, innove en développant la  natation à travers le jardin aquatique.',
         lunchBreak: 'Pause déjeuner et surveilliance des enfants qui restent l\'après-midi ',
         morning: 'Encadrés par les animateurs, les petits et grands évoluent à leur guise au sein du club et profitent des installations (balançoires, trampoline, jeux). En fonction de la dynamique du groupe et des horaires des marées, les animateurs proposent des jeux, concours, parcours, observation des fonds marins… Une baignade en fin de matinée est prévue si le temps nous le permet.',
-        lunch: 'Pause déjeuner : Les enfants retrouvent leurs parents. Possibilité d’accueillir les enfants sous conditions (N’hésitez pas à nous solliciter)',
+        lunch: 'Pause déjeuner : Les enfants retrouvent leurs parents. Possibilité d\'accueillir les enfants sous conditions (N\'hésitez pas à nous solliciter)',
         on_closing: 'Pour finaliser cet après-midi joyeuse, tous les enfants et les animateurs se retrouvent autour d\'une chorégraphie ! On compte sur les adultes pour se joindre à eux ! Une remise de cadeaux pour clôturer cette belle journée',
         on_closing_title: 'Le final ! ',
         mini: {
@@ -171,7 +178,7 @@ export default defineI18nConfig(() => ({
         },
         accessibility: {
           title: 'Accessibilité / S\'y rendre',
-          content: 'Accessible à pied, en vélo (piste cyclable), en bus (Fun Bus, arrêt Rond-Point L’Auniscéane Piscine ou Centre ville – Place de la Liberté), en voiture (parking du Maupas)',
+          content: 'Accessible à pied, en vélo (piste cyclable), en bus (Fun Bus, arrêt Rond-Point L\'Auniscéane Piscine ou Centre ville – Place de la Liberté), en voiture (parking du Maupas)',
           address: 'Plage centrale (proche centre ville) 85360 La Tranche-sur-Mer',
         },
       },
@@ -181,7 +188,7 @@ export default defineI18nConfig(() => ({
         afternoon: '16€',
         day: '20€',
         lessons: '16€',
-        description: 'Présentez-vous directement sur la plage pour faire l\'inscription (Nom, prénom, téléphon et adresse). L’inscription est simple et rapide à la demi-journée, à la journée ou à la semaine.',
+        description: 'Présentez-vous directement sur la plage pour faire l\'inscription (Nom, prénom, téléphon et adresse). L\'inscription est simple et rapide à la demi-journée, à la journée ou à la semaine.',
       },
       schedules_of_season: {
         title: 'Les jeux concours de la saison',
@@ -229,6 +236,13 @@ export default defineI18nConfig(() => ({
         title: 'Les activités',
         without_reservation: 'sans réservation',
         with_reservation: 'avec réservation',
+      },
+      summer_closure: {
+        title: 'Fermeture Estivale',
+        message: 'Nous avons le regret de vous informer que le club sera fermé pendant la période estivale cette année.',
+        reopening: 'Nous rouvrirons nos portes la saison prochaine.',
+        contact: 'Pour toute question, n\'hésitez pas à nous contacter.',
+        close: 'Fermer'
       },
     },
   },

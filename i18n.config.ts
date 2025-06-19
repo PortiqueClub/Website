@@ -120,7 +120,7 @@ export default defineI18nConfig(() => ({
         message: 'We would like to inform you that the club will be closed during the summer period this year.',
         reopening: 'We will reopen our doors next season.',
         contact: 'For any questions, please do not hesitate to contact us.',
-        close: 'Close'
+        close: 'Close',
       },
     },
     fr: {
@@ -238,11 +238,18 @@ export default defineI18nConfig(() => ({
         with_reservation: 'avec réservation',
       },
       summer_closure: {
-        title: 'Fermeture Estivale',
-        message: 'Nous avons le regret de vous informer que le club sera fermé pendant la période estivale cette année.',
+        title: 'Fermeture du Portique Club – Un au revoir rempli d’émotion ',
+        message: `C’est avec une immense tristesse que nous vous annonçons que la concession du Portique Club ne sera pas renouvelée cet été. Cette décision marque la fermeture de notre club, et malheureusement, l’avenir de cette belle aventure reste incertain.
+
+Depuis toutes ces années, nous avons eu la chance d’accueillir vos enfants, de partager des rires, des jeux, des souvenirs inoubliables. Vous avez fait du Portique Club un lieu de vie et de bonheur, et pour cela, toute l’équipe vous remercie du fond du cœur.
+
+Nous espérons sincèrement vous recroiser, un jour, sur la plage…
+En attendant, n’hésitez pas à nous partager vos plus beaux souvenirs en photos : nous aimerions en publier quelques-uns pour garder vivant l’esprit du Portique.
+
+Avec toute notre affection`,
         reopening: 'Nous rouvrirons nos portes la saison prochaine.',
-        contact: 'Pour toute question, n\'hésitez pas à nous contacter.',
-        close: 'Fermer'
+        contact: 'L’équipe du Portique Club',
+        close: 'Fermer',
       },
     },
   },

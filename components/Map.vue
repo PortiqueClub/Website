@@ -24,7 +24,7 @@
       v-else
       class="relative col-span-2"
     >
-      <MapboxMap
+      <!-- <MapboxMap
         map-id="ID"
         style="height: 450px; width: 100%;"
         :options="{
@@ -32,7 +32,7 @@
           center: [-1.4320995, 46.3436326],
           zoom: 14,
         }"
-      />
+      /> -->
     </div>
   </div>
 </section>

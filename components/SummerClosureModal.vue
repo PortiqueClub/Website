@@ -18,14 +18,14 @@
     />
 
     <!-- Modal -->
-    <div class="relative z-50 p-32 mx-32 w-full max-w-2xl rounded-xl bg-yellow-light">
+    <div class="relative z-50 p-32 mx-32 w-full max-w-2xl rounded-xl bg-yellow-light max-h-[90vh] overflow-y-auto">
       <div class="flex flex-col items-center space-y-24">
         <h3 class="text-2xl font-bold text-center text-blue-dark">
           {{ $t('summer_closure.title') }}
         </h3>
 
         <div class="flex flex-col items-center space-y-16">
-          <p class="text-lg text-center text-blue-dark">
+          <p class="text-sm text-center md:text-lg text-blue-dark">
             {{ $t('summer_closure.message') }}
           </p>
 

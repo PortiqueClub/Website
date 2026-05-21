@@ -6,10 +6,6 @@
       v-if="!$isMobile"
     />
 
-    <SummerClosureModal
-      :is-open="true"
-    />
-
     <main class="bg-blue-dark">
       <div class="flex flex-col items-center">
         <ActivitySection />

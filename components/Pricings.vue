@@ -90,7 +90,7 @@
           <img
             class="w-full h-106"
             src="/static/euro.svg"
-            alt="Espèce"
+            :alt="$t('payment.cash')"
           >
         </div>
         <div class="flex flex-col space-y-32">
@@ -100,7 +100,7 @@
           <img
             class="w-full h-80"
             src="/static/cheque.webp"
-            alt="Espèce"
+            :alt="$t('payment.ch')"
           >
         </div>
         <div class="flex flex-col space-y-32">
@@ -110,7 +110,7 @@
           <img
             class="w-full h-106"
             src="/static/cheque-vacance.svg"
-            alt="Chèque-vacances"
+            :alt="$t('payment.cv')"
           >
         </div>
       </div>

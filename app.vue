@@ -2,6 +2,8 @@
 <div class="relative">
   <SeoKit />
   <div class="flex flex-col min-h-screen bg-yellow-light">
+    <ReopeningBanner />
+
     <TheHeader
       v-if="!$isMobile"
     />

@@ -115,11 +115,9 @@ export default defineI18nConfig(() => ({
         without_reservation: 'sans réservation',
         with_reservation: 'avec réservation',
       },
-      summer_closure: {
-        title: 'Summer Closure Notice',
-        message: 'We would like to inform you that the club will be closed during the summer period this year.',
-        reopening: 'We will reopen our doors next season.',
-        contact: 'For any questions, please do not hesitate to contact us.',
+      reopening_banner: {
+        title: 'Great news: the Portique Club is coming back!',
+        message: 'Thanks to the mobilization of many families and former staff, we are relaunching the Portique Club as a non-profit association. Our goal: keep offering your children the games, swimming lessons and unforgettable memories they love, this time run by and for the community.\n\nWe will need volunteers, members and support to make this new adventure happen. Stay tuned, more details are coming very soon!',
         close: 'Close',
       },
     },
@@ -237,18 +235,11 @@ export default defineI18nConfig(() => ({
         without_reservation: 'sans réservation',
         with_reservation: 'avec réservation',
       },
-      summer_closure: {
-        title: 'Fermeture du Portique Club – Un au revoir rempli d’émotion ',
-        message: `C’est avec une immense tristesse que nous vous annonçons que la concession du Portique Club ne sera pas renouvelée cet été. Cette décision marque la fermeture de notre club, et malheureusement, l’avenir de cette belle aventure reste incertain.
+      reopening_banner: {
+        title: 'Bonne nouvelle : Le Portique Club revient !',
+        message: `Grâce à la mobilisation de nombreuses familles et anciens animateurs, nous relançons Le Portique Club sous la forme d’une association loi 1901. Notre objectif : continuer à offrir à vos enfants les jeux, les cours de natation et les souvenirs inoubliables qu’ils adorent, cette fois porté par et pour la communauté.
 
-Depuis toutes ces années, nous avons eu la chance d’accueillir vos enfants, de partager des rires, des jeux, des souvenirs inoubliables. Vous avez fait du Portique Club un lieu de vie et de bonheur, et pour cela, toute l’équipe vous remercie du fond du cœur.
-
-Nous espérons sincèrement vous recroiser, un jour, sur la plage…
-En attendant, n’hésitez pas à nous partager vos plus beaux souvenirs en photos : nous aimerions en publier quelques-uns pour garder vivant l’esprit du Portique.
-
-Avec toute notre affection`,
-        reopening: 'Nous rouvrirons nos portes la saison prochaine.',
-        contact: 'L’équipe du Portique Club',
+Nous aurons besoin de bénévoles, d’adhérents et de votre soutien pour donner vie à cette nouvelle aventure. Restez connectés, plus d’informations arrivent très bientôt !`,
         close: 'Fermer',
       },
     },

@@ -2,70 +2,69 @@ name: 🛠 Tests-CI
 
 on:
   pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 env:
   NODE_ENV: prod
+  NODE_VERSION: '20'
 
 jobs:
-  StyleGuides_checks:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node: [18.x]
-        os: [ubuntu-latest]
-      fail-fast: false
+  checks:
+    name: 🧪 Checks (lint, typecheck, test)
+    runs-on: ubuntu-latest
 
     steps:
       - name: ⬇️ Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install pnpm
+      - name: 📦 Install pnpm
         uses: pnpm/action-setup@v2
 
-      - name: ⚙️ Set node ${{ matrix.node }}
-        uses: actions/setup-node@v3
+      - name: ⚙️ Setup Node ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
 
-      - name: ⚙️ Setup
-        run: npm i -g @antfu/ni
-
-      - name: 🔧 Install
-        run: nci
+      - name: 🔧 Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: 📖 Lint
-        run: nr lint
+        run: pnpm run lint
 
       - name: ☑️ Type checking
-        run: nr type:check
+        run: pnpm run type:check
 
-  Build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node: [16.x, 18.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
-      fail-fast: false
+      - name: 🧪 Test
+        run: pnpm run test
+
+  build:
+    name: 🏗 Build
+    runs-on: ubuntu-latest
 
     steps:
       - name: ⬇️ Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install pnpm
+      - name: 📦 Install pnpm
         uses: pnpm/action-setup@v2
 
-      - name: ⚙️ Set node ${{ matrix.node }}
-        uses: actions/setup-node@v3
+      - name: ⚙️ Setup Node ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
 
-      - name: ⚙️ Setup
-        run: npm i -g @antfu/ni
-
-      - name: 🔧 Install
-        run: nci
+      - name: 🔧 Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: 🏗 Build
-        run: nr build
+        run: pnpm run build

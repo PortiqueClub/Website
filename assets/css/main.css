@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/*
+ * This project's v3 tailwind.config.js fully replaced (not extended) most of
+ * Tailwind's default theme, but the bulk of that 285-line file turned out to be
+ * Tailwind's own stock defaults copied verbatim with no actual changes. Only the
+ * values below diverge from Tailwind v4's defaults or are genuine customizations;
+ * everything else (fontWeight, letterSpacing, borderRadius, grid scales,
+ * transitions, etc.) already matches v4's built-in defaults byte-for-byte and
+ * needs no port.
+ */
+@theme {
+  /* Custom breakpoints (v3: theme.screens, mobile-first `sm` at 375px instead of
+     the default 640px; no `2xl` tier). */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* Drop color families this project never used, keep the rest (they already
+     match v4's default palette values, no need to restate them). */
+  --color-inherit: initial;
+  --color-slate-*: initial;
+  --color-zinc-*: initial;
+  --color-neutral-*: initial;
+  --color-stone-*: initial;
+  --color-mauve-*: initial;
+  --color-olive-*: initial;
+  --color-mist-*: initial;
+  --color-taupe-*: initial;
+  --color-amber-*: initial;
+  --color-lime-*: initial;
+  --color-emerald-*: initial;
+  --color-teal-*: initial;
+  --color-cyan-*: initial;
+  --color-sky-*: initial;
+  --color-fuchsia-*: initial;
+  --color-rose-*: initial;
+
+  /* Brand color additions (v3: theme.colors.yellow.light / orange.primary / blue.light / blue.dark). */
+  --color-yellow-light: #efbb33;
+  --color-orange-primary: #f0ba33;
+  --color-blue-light: #74B2FB;
+  --color-blue-dark: #1C3657;
+
+  /* Fully custom pixel-keyed spacing scale (v3: theme.spacing) — the utility
+     number IS the pixel value, not Tailwind's default 4px-step multiplier, so
+     the dynamic --spacing generator must be disabled and each key spelled out. */
+  --spacing-*: initial;
+  --spacing-0: 0px;
+  --spacing-4: 0.25rem;
+  --spacing-6: 0.375rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-18: 1.125rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-28: 1.75rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-56: 3.5rem;
+  --spacing-64: 4rem;
+  --spacing-80: 5rem;
+  --spacing-96: 6rem;
+  --spacing-106: 6.625rem;
+  --spacing-116: 7.25rem;
+  --spacing-128: 8rem;
+  --spacing-148: 9.25rem;
+  --spacing-160: 10rem;
+  --spacing-176: 11rem;
+  --spacing-180: 11.25rem;
+  --spacing-192: 12rem;
+  --spacing-224: 14rem;
+  --spacing-256: 16rem;
+  --spacing-288: 18rem;
+  --spacing-400: 25rem;
+  --spacing-450: 28.125rem;
+  --spacing-500: 31.25rem;
+  --spacing-550: 34.375rem;
+  --spacing-600: 37.5rem;
+  --spacing-700: 43.75rem;
+
+  /* Custom font stacks (v3: theme.fontFamily). */
+  --font-*: initial;
+  --font-sans: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  --font-heading: Chewy, sans-serif;
+  --font-link: Chewy, sans-serif;
+
+  /* Custom font sizes with non-default line-heights (v3: theme.fontSize). */
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.75rem;
+  --text-base: 1rem;
+  --text-base--line-height: 2rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.687rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.875rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2.25rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.812rem;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: 3.375rem;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 4.5rem;
+  --text-6xl: 4rem;
+  --text-6xl--line-height: 6rem;
+
+  /* Only utility actually used from the old custom boxShadow scale (`shadow-md`
+     in TheHeader.vue) — its old value differs slightly from v4's new default. */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* v3: theme.container.center + theme.container.padding — v4 has no container
+   theme key, the .container utility is customized directly. */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  @media (width >= theme(--breakpoint-md)) {
+    padding-inline: 2rem;
+  }
+}
+
+/* v3: tailwind.config.js `safelist` (dynamically-built status/badge classes). */
+@source inline("{bg,border}-{green,gray,red,yellow,blue,purple,orange}-800");
+@source inline("bg-{green,gray,red,yellow,blue,purple,orange}-100");
+@source inline("{text,ring}-{green,gray,red,yellow,blue,purple,orange}-600");

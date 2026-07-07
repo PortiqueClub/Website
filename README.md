@@ -4,16 +4,16 @@ Site web du [Portique Club](https://leportiqueclub.fr/), club d'animation et d'�
 
 ## Stack technique
 
-- [Nuxt 3](https://nuxt.com/) (Vue 3, TypeScript)
-- [Tailwind CSS](https://tailwindcss.com/) via `@nuxtjs/tailwindcss`, avec purge via `nuxt-purgecss`
-- [@nuxtjs/i18n](https://i18n.nuxtjs.org/) pour l'internationalisation (français / anglais, messages définis dans `i18n.config.ts`)
-- [nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit) pour le SEO
-- ESLint (config `@antfu/eslint-config`) pour le lint
-- pnpm comme gestionnaire de paquets, Node `20.x` (voir `.nvmrc`)
+- [Nuxt 4](https://nuxt.com/) (Vue 3, TypeScript)
+- [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/vite`, config CSS-first dans `assets/css/main.css`
+- [@nuxtjs/i18n](https://i18n.nuxtjs.org/) pour l'internationalisation (français / anglais, messages définis dans `i18n/i18n.config.ts`)
+- [@nuxtjs/seo](https://nuxtseo.com/) (Nuxt SEO) pour le SEO
+- ESLint flat config (préréglage `@antfu/eslint-config`) pour le lint
+- pnpm comme gestionnaire de paquets, Node `22.x` (voir `.nvmrc`)
 
 ## Prérequis
 
-- Node.js 20.x (voir `.nvmrc`)
+- Node.js 22.x (voir `.nvmrc`)
 - [pnpm](https://pnpm.io/) 8.x
 
 ## Installation
@@ -71,7 +71,7 @@ Voir la [documentation de déploiement Nuxt](https://nuxt.com/docs/getting-start
 - `components/` — composants Vue (header, footer, sections de la page : activités, tarifs, historique, plan d'accès, etc.)
 - `helpers/` — constantes et fonctions utilitaires partagées
 - `plugins/` — plugins Nuxt (ex. détection des breakpoints)
-- `i18n.config.ts` — traductions français / anglais
+- `i18n/i18n.config.ts` — traductions français / anglais
 - `nuxt.config.ts` — configuration Nuxt (modules, SEO, méta, i18n)
-- `tailwind.config.js` / `colors.js` — configuration du thème Tailwind
+- `assets/css/main.css` — configuration du thème Tailwind (`@theme`)
 - `public/` — assets statiques

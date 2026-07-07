@@ -4,9 +4,7 @@
   <div class="flex flex-col min-h-screen bg-yellow-light">
     <ReopeningBanner />
 
-    <TheHeader
-      v-if="!$isMobile"
-    />
+    <TheHeader />
 
     <main class="bg-blue-dark">
       <div class="flex flex-col items-center">
@@ -24,7 +22,3 @@
   </div>
 </div>
 </template>
-
-<script setup lang="ts">
-const { $isMobile } = useNuxtApp()
-</script>

@@ -22,6 +22,7 @@
       >
         Contact
       </a>
+      <SwitchLang />
     </nav>
 
     <button
@@ -63,7 +64,6 @@
         />
       </svg>
     </button>
-    <!-- <SwitchLang /> -->
   </div>
 
   <nav
@@ -87,6 +87,7 @@
     >
       Contact
     </a>
+    <SwitchLang />
   </nav>
 </header>
 </template>
@@ -95,6 +96,4 @@
 import { MENU_ITEMS } from '@/helpers/constants'
 
 const isMenuOpen = ref(false)
-
-// import SwitchLang from './SwitchLang.vue'
 </script>
